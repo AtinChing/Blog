@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fade-In Animation</title>
+  <!-- Add the Bootstrap CSS link -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for the fade-in animation */
+    .fade-in {
+      opacity: 0; /* Start with 0 opacity */
+      transition: opacity 1s ease-in-out; /* Transition for opacity change */
+    }
+
+    .fade-in.active {
+      opacity: 1; /* At the active state, opacity becomes 1 */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="fade-in">Welcome to My Website</h1>
+  </div>
+
+  <!-- Add the Bootstrap and JavaScript scripts at the end of the body -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Add the 'active' class to trigger the fade-in animation
+    window.onload = function() {
+      const fadeInElement = document.querySelector('.fade-in');
+      fadeInElement.classList.add('active');
+    };
+  </script>
+</body>
+</html>
