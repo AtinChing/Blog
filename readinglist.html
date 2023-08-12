@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <body class="fade-in">
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-body-tertiary" style="background-color: #6610f2;">
+            <div class="container-fluid ">
+                <!-- <a class="navbar-brand text-white" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="readinglist.html">Reading List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Profiles</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-12">
+                    <div class="card-group">
+                        <div class="card">
+                            <img src="img/book covers/the-new-turing-omnibus.jpg" class="card-img-top" alt="..." style="height: 400px; width: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">The New Turing Omnibus</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/book covers/once_upon_an_algorithm.jpg" class="card-img-top" alt="..." style="height: 400px; width: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">Once Upon an Algorithm</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                    content.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/book covers/unity_book.jpg" class="card-img-top" alt="..." style="height: 400px; width: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">SamsTeach Yourself Unity Game Development in 24 Hours</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This card has even longer content than the first to show that equal
+                                    height action.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/book covers/atomic_habits.jpg" class="card-img-top" alt="..." style="height: 400px; width: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">Atomic Habits</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This card has even longer content than the first to show that equal
+                                    height action.</p>
+                                <p class="card-text"><small class="text-body-secondary">The book that changed my life</small></p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            /* Custom CSS for the fade-in animation */
+            .fade-in {
+              opacity: 0; /* Start with 0 opacity */
+              transition: opacity 1s ease-in-out; /* Transition for opacity change */
+            }
+        
+            .fade-in.active {
+              opacity: 1; /* At the active state, opacity becomes 1 */
+            }
+          </style>
+        <!-- Add the Bootstrap and JavaScript scripts at the end of the body -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            // Add the 'active' class to trigger the fade-in animation
+            window.onload = function () {
+                const fadeInElement = document.querySelector('.fade-in');
+                fadeInElement.classList.add('active');
+            };
+        </script>
+  </body>
+</html>
